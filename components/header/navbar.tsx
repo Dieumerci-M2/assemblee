@@ -12,7 +12,7 @@ function NavBar() {
       {navigations.items.map((nav) => (
         <li
           onClick={() => setActive(nav.label)}
-          className={`${active == nav.label ? " text-cblue" : " text-black"}`}
+          className={` p-1${active == nav.label ? " text-cblue relative after:absolute after:w-full after:left-0 after:bottom-0 after:h-[2px] after:bg-cblue" : " text-black"}`}
           key={nav.path}
         >
           <Link href={nav.path}>
