@@ -25,7 +25,7 @@ function HeroSection() {
         />
         <div className=" absolute w-full h-full flex items-center justify-center gap-8 flex-col">
           <h3 className={  ` ${diploma.className} text-white text-3xl font-bold uppercase`}>{homePageContent.heroSection.text}</h3>
-          <Button className="">{homePageContent.heroSection.buttonText}</Button>
+          <Button size="lg" className="">{homePageContent.heroSection.buttonText}</Button>
         </div>
       </div>
     </div>

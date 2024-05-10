@@ -1,11 +1,11 @@
 import React from "react";
 import type { SVGProps } from "react";
 
-interface IPops {
+interface IProps {
     size?: number;
 }
 
-export default function TwittterIcon(props: IPops) {
+export default function TwittterIcon(props: IProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
