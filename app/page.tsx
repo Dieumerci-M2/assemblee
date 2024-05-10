@@ -1,4 +1,5 @@
 "use client";
+import ChurchAdhesionCard from "@/components/homepage/adherer_nos_eglises/card";
 import HeroSection from "@/components/homepage/heroSection";
 import AboutUsCard from "@/components/homepage/qui_sommes_nous/card";
 import { homePageContent } from "@/data/homePage";
@@ -57,7 +58,7 @@ export default function Home() {
                 )}
               </div>
             </div>
-            <div className="w-full flex flex-col gap-4 items-center">
+            <div className="w-full flex flex-col gap-3 items-center">
               <h3 className=" font-semibold text-xl uppercase">
                 {homePageContent.predicationsSection.bottomSection.title}
               </h3>
@@ -65,6 +66,20 @@ export default function Home() {
                 {homePageContent.predicationsSection.bottomSection.description}
               </p>
             </div>
+          </div>
+        </div>
+        <div className="w-full flex flex-col items-center">
+          <h3 className=" text-4xl text-center font-semibold mb-16 max-w-[50%] text-cblue">
+            {homePageContent.churchAdhesionAdvantages.title}
+          </h3>
+          <div className="w-full mb-16 items-center justify-center flex">
+            {homePageContent.churchAdhesionAdvantages.items.map(
+              (item, index) => (
+                <div key={index} className={`${index % 2 && "relative top-16"}`}>
+                  <ChurchAdhesionCard  title={item.title} description={item.description} img={item.img} />
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

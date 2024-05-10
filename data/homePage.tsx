@@ -9,6 +9,12 @@ import {
   predicateur2,
   predicateur3,
 } from "@/public/assets/images/homepage/predication";
+import {
+  ecodim,
+  serviteurs,
+  bapteme,
+  statueHoldingBook,
+} from "@/public/assets/images/homepage/avantages_adhesion_aux_eglises";
 
 export const homePageContent = {
   heroSection: {
@@ -57,5 +63,35 @@ export const homePageContent = {
       description:
         "L'assemblée Béthel croit à l'inspiration plenière des saintes écritures et à leur autorité sur la foi, la vie et le service de chaque croyant.",
     },
+  },
+
+  churchAdhesionAdvantages: {
+    title: "Les avantages d'adhérer à nos differentes églises",
+    items: [
+      {
+        title: "Croitre spirituelement",
+        description:
+          "Il es écrit : apprennez à vos enfants les choses de Dieu dès le bas ages pour qu'en gradissant qu'ils ne.....",
+        img: ecodim,
+      },
+      {
+        title: "Avoir la seine doctrine",
+        description:
+          "Les principes, les philosophies et les enseignements fondamentaux de Jesus-Christ  qui concerne le salut...",
+        img: statueHoldingBook,
+      },
+      {
+        title: "Etre baptisé qu nom de jesus christ",
+        description:
+          "Nous croyont au Bathème du saint Esprit qui s'opère miraculeusement dans la vie d'un homme  par prière....",
+        img: bapteme,
+      },
+      {
+        title: "Temoigné la grandeur de Dieu dans notre vie",
+        description:
+          "Il est écrit : Dnas la maison de Dieu que celui qui a une chanson qu'il chante et que celui quia un temoi...",
+        img: serviteurs,
+      },
+    ],
   },
 };
