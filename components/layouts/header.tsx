@@ -6,8 +6,8 @@ import { headerZone } from "@/data/headerZone";
 
 function Header() {
   return (
-    <div className="w-full h-auto">
-      <div className="m-auto text-lg w-[80rem]   h-14 px-6 flex items-center justify-between">
+    <div className="w-full h-20 flex items-center justify-center">
+      <div className="m-auto w-[80rem]   h-14 px-6 flex items-center justify-between">
         <Logo />
 
         <NavBar />
