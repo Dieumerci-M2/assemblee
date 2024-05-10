@@ -1,11 +1,11 @@
 import React from "react";
 import type { SVGProps } from "react";
 
-interface IPops {
+interface IProps {
     size?: number;
 }
 
-export default function LinkedinIcon(props: IPops) {
+export default function LinkedinIcon(props: IProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
