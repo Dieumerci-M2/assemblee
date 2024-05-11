@@ -11,7 +11,6 @@ export default function LinkedinIcon(props: IProps) {
       width={`${props.size || 1}em`}
       height={`${props.size || 1}em`}
       viewBox="0 0 24 24"
-      {...props}
     >
       <path
         fill="currentColor"

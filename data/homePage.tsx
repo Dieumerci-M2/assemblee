@@ -16,7 +16,16 @@ import {
   statueHoldingBook,
 } from "@/public/assets/images/homepage/avantages_adhesion_aux_eglises";
 import { CommaIcon, PlaceIcon, TimeIcon } from "@/public/assets/icons";
-import { anneAttachementCover, eventFlayer } from "@/public/assets/images/homepage/participer_aux_celebrations";
+import {
+  anneAttachementCover,
+  eventFlayer,
+} from "@/public/assets/images/homepage/participer_aux_celebrations";
+import {
+  serviteur1,
+  serviteur2,
+  serviteur3,
+  serviteur4,
+} from "@/public/assets/images/homepage/serviteurs";
 
 export const homePageContent = {
   heroSection: {
@@ -119,9 +128,37 @@ export const homePageContent = {
       title: "Année d'attachement à la parole de Dieu",
       description:
         "Comme il es annocée, Lannée 2024  cest une année dattachement à la parole de Dieu à lassemblée Béthel Kyeshero",
-        icon  : <CommaIcon size={5}/>,
+      icon: <CommaIcon size={5} />,
       buttonText: "Visiter",
-      bgImg : anneAttachementCover
+      bgImg: anneAttachementCover,
     },
+  },
+
+  nos_seviteurs: {
+    title : "Nos differents serviteur de Dieu",
+    items: [
+      {
+        name: "EV. EMMANUEL KARUVATI",
+        img: serviteur1,
+        description:
+          "Berger de l'assemblée Béthel Kyeshero et reponsable de l'association assemblée Béthel.",
+      },
+      {
+        name: "DR. BERYY L.",
+        img: serviteur2,
+        description:
+          "Docteur de la Parole au sein de l'église assemblée Béthel Kyeshero",
+      },
+      {
+        name: "PASTEUR SINZAHERA",
+        img: serviteur3,
+        description: "Pasteur et Berger de l'Assemblée Béthel Office",
+      },
+      {
+        name: "Pasteur THOMAS KAPITO",
+        img: serviteur4,
+        description: "Pasteur et Berger de l'assemblée Béthel Lubumbashi",
+      },
+    ],
   },
 };
