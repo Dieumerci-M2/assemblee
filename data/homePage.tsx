@@ -15,6 +15,8 @@ import {
   bapteme,
   statueHoldingBook,
 } from "@/public/assets/images/homepage/avantages_adhesion_aux_eglises";
+import { CommaIcon, PlaceIcon, TimeIcon } from "@/public/assets/icons";
+import { anneAttachementCover, eventFlayer } from "@/public/assets/images/homepage/participer_aux_celebrations";
 
 export const homePageContent = {
   heroSection: {
@@ -93,5 +95,33 @@ export const homePageContent = {
         img: serviteurs,
       },
     ],
+  },
+  rejoignez_nous: {
+    title: "Rejoignez-nous et participez à quelque chose de grand",
+    events: {
+      timeIcon: <TimeIcon size={1.5} />,
+      placeIcon: <PlaceIcon size={1.5} />,
+      upcomingEvent: {
+        headerText: "Evenement à venir",
+        title: "Journée spécial d'échange de voeux",
+        description:
+          "La jeunesse de l'assemblée Bethel organise une sortie chrétienne pour différentes activités.",
+        time: "Vendredi 23:39 IST",
+        date: "20/07/2024",
+        place: "Kiroches",
+        flayer: eventFlayer,
+        registerButton: {
+          text: "S'inscrire",
+        },
+      },
+    },
+    year_of_attachement: {
+      title: "Année d'attachement à la parole de Dieu",
+      description:
+        "Comme il es annocée, Lannée 2024  cest une année dattachement à la parole de Dieu à lassemblée Béthel Kyeshero",
+        icon  : <CommaIcon size={5}/>,
+      buttonText: "Visiter",
+      bgImg : anneAttachementCover
+    },
   },
 };
