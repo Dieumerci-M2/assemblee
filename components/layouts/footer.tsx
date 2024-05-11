@@ -13,7 +13,9 @@ function Footer() {
     <div className="w-full bg-black text-white h-auto">
       <div className=" w-[80rem] justify-between h-72 m-auto p-6 flex ">
         <div className="  flex flex-col h-full p-2 gap-5 ">
-          <FooterLogo />
+          <div>
+            <FooterLogo />
+          </div>
 
           <ul className="w-full text-ccream/60 text-sm flex-col flex gap-1">
             <li>{contacts.phoneNumber}</li>
@@ -50,8 +52,13 @@ function Footer() {
           <h2>{subscriptionFooterZone.title}</h2>
           <form>
             <div className="flex w-full max-w-sm items-center space-x-2">
-              <Input type="email" placeholder={subscriptionFooterZone.form.emailplaceholder} />
-              <Button type="submit">{subscriptionFooterZone.form.buttonText}</Button>
+              <Input
+                type="email"
+                placeholder={subscriptionFooterZone.form.emailplaceholder}
+              />
+              <Button type="submit">
+                {subscriptionFooterZone.form.buttonText}
+              </Button>
             </div>
           </form>
         </div>
