@@ -6,7 +6,7 @@ interface IProps {
     description : string;
     img : StaticImageData;
 }
-const card = () => {
+const ChoraleCard = (props : IProps) => {
   return (
     <div>
       
@@ -14,4 +14,4 @@ const card = () => {
   )
 }
 
-export default card
+export default ChoraleCard

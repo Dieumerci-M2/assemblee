@@ -7,7 +7,7 @@ interface IProps {
     img : StaticImageData;
 }
 
-const card = () => {
+const CoucheSocialCard = () => {
   return (
     <div>
       
@@ -15,4 +15,4 @@ const card = () => {
   )
 }
 
-export default card
+export default CoucheSocialCard
