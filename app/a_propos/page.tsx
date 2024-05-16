@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import AboutCard from '@/components/aboutpage/association_assemblee_bethel/card'
 import ChoraleCard from '@/components/aboutpage/chorales/card'
 import CoucheSocialCard from '@/components/aboutpage/couche_social/card'
@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { homePageContent } from '@/data/homePage'
 import { aboutPageContents } from '@/data/aboutPage'
 
-const aboutPage = () => {
+const a_propos = () => {
     const {
        assosiationSection,
        coucheSocialSection,
@@ -19,7 +19,7 @@ const aboutPage = () => {
     } = homePageContent
   return (
     <main>
-      <section>
+      <section className=''>
         <div className="w-full">
           <HeroSection />
         </div>
@@ -55,4 +55,4 @@ const aboutPage = () => {
   )
 }
 
-export default aboutPage
+export default a_propos

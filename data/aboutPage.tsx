@@ -20,7 +20,7 @@ export const aboutPageContents = {
     heroSection : {
         coverImage : heroSection,
         title0 : "A PROPOS DE NOUS",
-        title1 : "ÊTRE EN COMMINION FRATERNELLE AVEC DIEU ET AVEC LES HOMMES"
+        title1 : `<< ÊTRE EN COMMINION FRATERNELLE AVEC DIEU ET AVEC LES HOMMES >>`
     },
     assosiationSection : {
         title : "ASSOCIATIONS ENSEMBLÉE BETHEL",

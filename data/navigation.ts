@@ -3,23 +3,20 @@ export const navigations = {
     items : [
         {
             label : 'accueil',
-            // path : '/'
-            path : '#'
+            path : '/'
         },
         {
             label : 'à propos',
-            // path : '/a_propos'
-            path : '#'
+            path : '/a_propos'
+        
         },
         {
             label : 'programmes',
-            // path : '/programmes'
-            path : '#'
+            path : '/programmes'
         },
         {
             label : 'prédications',
-            // path : '/predicqtion'
-            path : '#'
+            path : '/predications'
         }
     ]
 } 
