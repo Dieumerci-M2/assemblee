@@ -17,50 +17,70 @@ const a_propos = () => {
     nos_seviteurs
   } = homePageContent
   return (
-    <main>
-      <article>
-        <section className=''>
-          <div className="w-full">
-            <HeroSection />
-          </div>
-        </section>
-        <section className="w-full flex flex-col items-center">
+    <main className='mb-20'>
+      <section className=''>
+        <div className="w-full">
+          <HeroSection />
+        </div>
+      </section>
+      <article className='px-[10rem]'>
+        <section className="w-full flex flex-col items-center gap-10">
           <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
             {assosiationSection.title}
           </h3>
-          <div>
-            <div>
-              <h3>{assosiationSection.table[0].title}</h3>
+          <div className='flex gap-10 w-full'>
+            <div className='flex flex-col gap-6 py-10 w-[50%]'>
+              <h3 className='font-semibold text-2xl'>{assosiationSection.table[0].title}</h3>
               <span>{assosiationSection.table[0].description}</span>
             </div>
-            <div>
-              <Image style={{}} alt="card" src={assosiationSection.table[0].image} />
+            <div className='w-[50%] h-[25rem] relative'>
+              <Image
+                fill
+                style={{objectFit: "cover" }}
+                alt="card"
+                src={assosiationSection.table[0].image}
+              />
             </div>
           </div>
-          <div>
-            <div>
-              <Image style={{}} alt="card" src={assosiationSection.table[1].image} />
+          <div className='flex gap-10'>
+            <div className='w-[50%] h-[25rem] relative'>
+              <Image
+                fill 
+                style={{objectFit : 'fill'}} 
+                alt="card" 
+                src={assosiationSection.table[1].image} 
+              />
             </div>
-            <div>
-              <h3>{assosiationSection.table[1].title}</h3>
+            <div className='flex flex-col gap-6 py-10 w-[50%] h-300'>
+              <h3 className='font-semibold text-2xl'>{assosiationSection.table[1].title}</h3>
               <span>{assosiationSection.table[1].description}</span>
             </div>
           </div>
-          <div>
-            <div>
-              <h3>{assosiationSection.table[2].title}</h3>
+          <div className='flex gap-10'>
+            <div className='flex flex-col gap-6 py-10 w-[50%] h-300'>
+              <h3 className='font-semibold text-2xl'>{assosiationSection.table[2].title}</h3>
               <span>{assosiationSection.table[2].description}</span>
             </div>
-            <div>
-              <Image style={{}} alt="card" src={assosiationSection.table[2].image} />
+            <div className='w-[50%] h-[25rem] relative'>
+              <Image
+                fill 
+                style={{objectFit : 'fill'}} 
+                alt="card" 
+                src={assosiationSection.table[2].image} 
+              />
             </div>
           </div>
-          <div>
-            <div>
-              <Image style={{}} alt="card" src={assosiationSection.table[3].image} />
+          <div className='flex flex-row gap-10'>
+            <div className='w-[50%] h-[25rem] relative'>
+              <Image
+                fill 
+                style={{objectFit : 'fill'}} 
+                alt="card" 
+                src={assosiationSection.table[3].image} 
+              />
             </div>
-            <div>
-              <h3>{assosiationSection.table[3].title}</h3>
+            <div className='flex flex-col gap-6 py-10 w-[50%] h-300'>
+              <h3 className='font-semibold text-2xl'>{assosiationSection.table[3].title}</h3>
               <span>{assosiationSection.table[3].description}</span>
             </div>
           </div>
@@ -84,8 +104,8 @@ const a_propos = () => {
           <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
             {coucheSocialSection.title}
           </h3>
-          <div>
-          {coucheSocialSection.table.map((tab) => (
+          <div className="w-full flex items-center justify-center gap-8">
+            {coucheSocialSection.table.map((tab) => (
               <CoucheSocialCard
                 key={tab.title}
                 title={tab.title}
@@ -99,9 +119,9 @@ const a_propos = () => {
           <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
             {choraleSection.title}
           </h3>
-          <div>
-            {choraleSection.table.map((tab)=>(
-              <ChoraleCard 
+          <div className='flex gap-6'>
+            {choraleSection.table.map((tab) => (
+              <ChoraleCard
                 key={tab.title}
                 title={tab.title}
                 description={tab.description}

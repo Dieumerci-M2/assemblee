@@ -69,14 +69,12 @@ export const aboutPageContents = {
         table : [
             {
                 title : "Trômpete de béthel",
-                description : `Cette Association sans but lucatif composée des hommes et des femmes qui croient en Jesus-Christ a vu le jour vers les années 1988 à Goma dans la prvince du Nord-Kivu en RDC. 
-                Celle-ci prit naissance à travers maintes étapes. La grande part revient à l’homme de Dieu et homme d’affaire à l’apoque MUSTAPHA SHABANI qui fut l’un des membres co-fondateurs du (Centre charismatique d’intercession Cité-Béthel).`,
+                description : `Cette Association sans but lucatif composée des hommes et des femmes qui croient en Jesus-Christ a vu le jour vers les années 1988 à Goma dans la prvince du Nord-Kivu en RDC. `,
                 image : Trompete
             },
             {
                 title : "Femmes batisseuses",
-                description : `L’assemblée Béthel tire source de ses enseignements en général dans la bible de 66 livres et en particulier dans l’épitre aux Ephésiens 2:20-22 source aunthentique designent comment l’église doit être fondée sur les enseignements des Apotres et des prophètes, Jesus étant la prière angulaire. 
-                Certes, l’Assemblée Bethel cherche tout tempas à rependre la parole de Jesus selon laquelle ses disciples accomplirons les mêmes choses que même plus grand (Jean14: 12).`,
+                description : `L’assemblée Béthel tire source de ses enseignements en général dans la bible de 66 livres et en particulier dans l’épitre aux Ephésiens 2:20-22 source aunthentique designent `,
                 image : FemmeBatisseur
             },
             {
