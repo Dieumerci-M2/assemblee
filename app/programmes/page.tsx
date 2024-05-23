@@ -41,7 +41,19 @@ const programmes = () => {
           {programmesSemaineSection.title}
         </h3>
         <div>
-          <CulteSemaine />
+          {programmesSemaineSection.cards.map((card)=>(
+            <CulteSemaine 
+              title={card.title}
+              subtitle={card.subtitle}
+              iconHeure ={card.iconHeure}
+              iconAdress = {card.iconAdress}
+              heure={card.heure}
+              timeZoneResponse={card.timeZoneResponse}
+              timeZoneTitle={card.timeZoneTitle}
+              adressChurch={card.adresseChurch}
+            />
+          ))}
+          
         </div>
       </section>
     </main>
