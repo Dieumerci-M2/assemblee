@@ -17,7 +17,7 @@ const a_propos = () => {
     nos_seviteurs
   } = homePageContent
   return (
-    <main className='mb-20'>
+    <main className='[&>*:last-child]:mb-20'>
       <section className=''>
         <div className="w-full">
           <HeroSection />

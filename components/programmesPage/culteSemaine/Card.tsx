@@ -12,13 +12,16 @@ interface IProps {
 }
 const CulteSemaine = (props : IProps) => {
   return (
-    <div>
-      <div>
-        <h3>{props.title}</h3>
+    <div 
+      className='flex flex-col gap-6 w-[25%] border-t after:absolute after:w-full after:h-[0.5rem]
+       overflow-hidden relative shadow-md p-12 after:bottom-0 after:left-0 after:bg-cblue'
+    >
+      <div className='flex flex-col gap-6'>
+        <h3 className='font-semibold'>{props.title}</h3>
         <h6>{props.subtitle}</h6>
       </div>
-      <div>
-      <span>{props.iconHeure}</span>
+      <div className='flex font-semibold gap-2'>
+        <span className='mt-3'>{props.iconHeure}</span>
           <div>
             <span>{props.heure}</span>
             <div>
@@ -27,7 +30,7 @@ const CulteSemaine = (props : IProps) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className='flex gap-2'>
           <span>{props.iconAdress}</span>
           <span>{props.adressChurch}</span>
       </div>
