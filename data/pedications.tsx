@@ -1,5 +1,4 @@
 import { predicateur1 } from "@/public/assets/images/homepage/predication";
-import { title } from "process";
 
 export const predicationPageContent = {
     precationRecenteSection: {
