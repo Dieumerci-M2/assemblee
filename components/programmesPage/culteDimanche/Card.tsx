@@ -17,7 +17,7 @@ const CulteDimanche = (props: IProps) => {
 
   return (
     <div className='flex w-[50%]'>
-      <div className='flex flex-col gap-6 px-6 py-10 w-[50%] bg-[#FFF5EB] shadow-md border-t'>
+      <div className='flex flex-col gap-6 px-6 py-10 w-[50%] bg-[#f9f7f5] shadow-md border-t'>
         <h3 className='font-semibold text-1xl text-center'>{props.title}</h3>
         <span>{props.description}</span>
         <div className="flex font-semibold gap-4">
