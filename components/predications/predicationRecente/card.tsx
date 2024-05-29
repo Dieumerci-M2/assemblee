@@ -10,23 +10,23 @@ interface Iprops {
 }
 const PredicationRecente = (props : Iprops) => {
   return (
-    <div>
-      <div>
-      <Image fill style={{objectFit : 'cover'}} alt="card" src={props.coverImage} />
+    <div className='flex w-full p-10 gap-10'>
+      <div className='w-[50%]'>
+      <Image style={{objectFit : 'cover'}} alt="card" src={props.coverImage} />
       </div>
-      <div>
-        <div>
+      <div className='w-[50%] flex flex-col gap-10'>
+        <div className='flex justify-between'>
           <span>{props.date}</span>
           <span>{props.author}</span>
         </div>
         <div>
-          <h3>{props.theme}</h3>
+          <h3 className='text-2xl font-semibold'>{props.theme}</h3>
         </div>
-        <div>
+        <div className='-mt-5'>
             <span>{props.summary}</span>
         </div>
         <div>
-          <button>{props.buttonTitle}</button>
+          <button className='px-6 py-2 bg-primary rounded-md'>{props.buttonTitle}</button>
         </div>
       </div>
     </div>

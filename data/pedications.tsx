@@ -1,9 +1,9 @@
-import { predicateur1 } from "@/public/assets/images/homepage/predication";
+import { predication0 } from "@/public/assets/images/predications"
 
 export const predicationPageContent = {
     precationRecenteSection: {
-        title: "Les prédications récente",
-        coverImage: predicateur1,
+        title: "Les prédications récentes",
+        coverImage: predication0,
         date: "Le 10 Mai 2024",
         author: `Ev.Emmanuel Karuvanti`,
         theme: "ATTACHONS NOUS DONC A JESUS",

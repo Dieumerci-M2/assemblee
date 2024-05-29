@@ -9,12 +9,14 @@ const predications = () => {
     toutesLesPrediSection
   }  = predicationPageContent
   return (
-    <main>
+    <main className='px-[10rem] bg-[#f9f7f5]'>
       <section>
-        <div>
-          <h3>{precationRecenteSection.title}</h3>
+        <div className='flex justify-center'>
+          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+            {precationRecenteSection.title}
+          </h3>
         </div>
-        <div>
+        <div className='bg-[#ffffff]'>
           <PredicationRecente
             coverImage = {precationRecenteSection.coverImage}
             date = {precationRecenteSection.date}
@@ -25,11 +27,13 @@ const predications = () => {
           />
         </div>
       </section>
-      <section>
-          <div>
-            <h3>{toutesLesPrediSection.title}</h3>
+      <section className='mb-20'>
+          <div className='flex justify-center'>
+            <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+              {toutesLesPrediSection.title}
+            </h3>
           </div>
-          <div>
+          <div className='flex flex-wrap gap-10 justify-center'>
             {toutesLesPrediSection.card.map((item)=>(
               <ToutePredication 
                 nomEglise = {item.nomEglise}
