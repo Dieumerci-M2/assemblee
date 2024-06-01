@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import { homePageContent } from "@/data/homePage";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface IProps {
   icon: ReactNode;
@@ -19,7 +19,11 @@ function AboutUsCard(props: IProps) {
         <h4 className=" font-semibold text-2xl">{props.title}</h4>
         <p className=" text-sm">{props.description}</p>
       </div>
-      <Button variant="secondary">{props.buttonText}</Button>
+      <div className="w-[100%]">
+        <Link href="/a_propos">
+          <Button variant="secondary" className="w-full">{props.buttonText}</Button>
+        </Link>
+      </div>
     </div>
   );
 }

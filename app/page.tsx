@@ -6,6 +6,7 @@ import AboutUsCard from "@/components/homepage/qui_sommes_nous/card";
 import { Button } from "@/components/ui/button";
 import { homePageContent } from "@/data/homePage";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const {
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <main className="flex w-full min-h-screen flex-col">
       <div className="w-[80rem] [&>*:last-child]:mb-20 m-auto py-6 flex flex-col items-center gap-20">
-        <div className="w-full">
+        <div className="w-full"> 
           <HeroSection />
         </div>
         <div className="w-full flex flex-col items-center">
@@ -55,13 +56,14 @@ export default function Home() {
                     className={`w-64 ${
                       index == 1 && " relative top-20 w-72 h-80"
                     } overflow-hidden relative rounded-2xl h-72`}
-                  >
-                    <Image
+                  ><Link href="/predications">
+                      <Image
                       fill
                       style={{ objectFit: "cover" }}
                       alt="serviteur"
                       src={item.img}
                     />
+                  </Link>
                   </div>
                 ))}
               </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { homePageContent } from "@/data/homePage";
 import { Button } from "../ui/button";
 import {Diplomata_SC} from "next/font/google"
+import Link from 'next/link'
 
 const diploma = Diplomata_SC({
     subsets :['latin'],
@@ -25,7 +26,7 @@ function HeroSection() {
         />
         <div className=" absolute w-full h-full flex items-center justify-center gap-8 flex-col">
           <h3 className={  ` ${diploma.className} text-white text-3xl font-bold uppercase`}>{homePageContent.heroSection.text}</h3>
-          <Button size="lg" className="">{homePageContent.heroSection.buttonText}</Button>
+          <Button size="lg" className=""><Link href="/a_propos">{homePageContent.heroSection.buttonText}</Link></Button>
         </div>
       </div>
     </div>

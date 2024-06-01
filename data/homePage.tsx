@@ -30,7 +30,7 @@ import {
 export const homePageContent = {
   heroSection: {
     coverImage: heroImage,
-    text: "association assemblee bethél",
+    text: "association assemblée bethél",
     buttonText: "En savoir plus sur nous",
   },
   aboutUsSection: {
