@@ -5,19 +5,19 @@ export const quickLinks =
     items :  [
         {
             label : 'à propos',
-            link : '#',
+            link : '/a_propos',
         },
         {
-            label : 'evenements',
-            link : '#',
+            label : 'programmes',
+            link : '/programmes',
         },
         {
-            label : 'blog',
-            link : '#',
+            label : 'predications',
+            link : '/predications',
         },
         {
-            label : 'sermon',
-            link : '#',
+            label : 'conctact',
+            link : '/contact',
         }
     ]
 
