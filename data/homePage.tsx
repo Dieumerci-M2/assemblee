@@ -67,6 +67,9 @@ export const homePageContent = {
       { img: predicateur1 },
       { img: predicateur2 },
       { img: predicateur3 },
+      { img: predicateur1 },
+      { img: predicateur2 },
+      { img: predicateur3 },
     ],
 
     bottomSection: {

@@ -1,14 +1,12 @@
 "use client";
 import HeroCarousel from "@/components/carousels/HeroCarousel";
+import NosPredicationCarousel from "@/components/carousels/NosPredication";
 import NosServiteursCarousel from "@/components/carousels/ServiteurCarousel";
 import ChurchAdhesionCard from "@/components/homepage/adherer_nos_eglises/card";
-import HeroSection from "@/components/homepage/heroSection";
-import ServantCard from "@/components/homepage/nos_serviteurs/card";
 import AboutUsCard from "@/components/homepage/qui_sommes_nous/card";
 import { Button } from "@/components/ui/button";
 import { homePageContent } from "@/data/homePage";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   const {
@@ -51,24 +49,7 @@ export default function Home() {
                 {predicationsSection.description}
               </p>
               {/* Margin bottom is added here after considering margins in the gallery */}
-              <div className="w-full mb-20 pb-10 items-center justify-center flex gap-6">
-                {predicationsSection.imageGallery.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`w-64 ${
-                      index == 1 && " relative top-20 w-72 h-80"
-                    } overflow-hidden relative rounded-2xl h-72`}
-                  >
-                    <Link href="/predications">
-                      <Image
-                        fill
-                        style={{ objectFit: "cover" }}
-                        alt="serviteur"
-                        src={item.img}
-                      />
-                    </Link>
-                  </div>
-                ))}
+                <NosPredicationCarousel/>
               </div>
             </div>
             <div className="w-full flex flex-col gap-3 items-center">
@@ -187,7 +168,6 @@ export default function Home() {
             <NosServiteursCarousel/>
           </div>
         </div>
-      </div>
     </main>
   );
 }
