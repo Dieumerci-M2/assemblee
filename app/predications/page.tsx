@@ -34,8 +34,9 @@ const predications = () => {
             </h3>
           </div>
           <div className='flex flex-wrap gap-10 justify-center'>
-            {toutesLesPrediSection.card.map((item)=>(
+            {toutesLesPrediSection.card.map((item,index)=>(
               <ToutePredication 
+              key={index}
                 nomEglise = {item.nomEglise}
                 theme = {item.theme}
                 summary = {item.summary}

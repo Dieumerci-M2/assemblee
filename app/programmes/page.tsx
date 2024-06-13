@@ -45,8 +45,9 @@ const programmes = () => {
             {programmesSemaineSection.subTitle}
           </h3>
           <div className='flex gap-6'>
-            {programmesSemaineSection.cards.map((card) => (
+            {programmesSemaineSection.cards.map((card,index) => (
               <CulteSemaine
+              key={index}
                 title={card.title}
                 subtitle={card.subtitle}
                 iconHeure={card.iconHeure}

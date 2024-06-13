@@ -159,6 +159,28 @@ export const homePageContent = {
         img: serviteur4,
         description: "Pasteur et Berger de l'assemblée Béthel Lubumbashi",
       },
+      {
+        name: "EV. EMMANUEL KARUVATI",
+        img: serviteur1,
+        description:
+          "Berger de l'assemblée Béthel Kyeshero et reponsable de l'association assemblée Béthel.",
+      },
+      {
+        name: "DR. BERYY L.",
+        img: serviteur2,
+        description:
+          "Docteur de la Parole au sein de l'église assemblée Béthel Kyeshero",
+      },
+      {
+        name: "PASTEUR SINZAHERA",
+        img: serviteur3,
+        description: "Pasteur et Berger de l'Assemblée Béthel Office",
+      },
+      {
+        name: "Pasteur THOMAS KAPITO",
+        img: serviteur4,
+        description: "Pasteur et Berger de l'assemblée Béthel Lubumbashi",
+      },
     ],
   },
 };

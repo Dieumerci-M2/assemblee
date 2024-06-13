@@ -1,4 +1,6 @@
 "use client";
+import HeroCarousel from "@/components/carousels/HeroCarousel";
+import NosServiteursCarousel from "@/components/carousels/ServiteurCarousel";
 import ChurchAdhesionCard from "@/components/homepage/adherer_nos_eglises/card";
 import HeroSection from "@/components/homepage/heroSection";
 import ServantCard from "@/components/homepage/nos_serviteurs/card";
@@ -18,11 +20,11 @@ export default function Home() {
   } = homePageContent;
 
   return (
-    <main className="flex w-full min-h-screen flex-col">
+    <main className="flex flex-col w-full min-h-screen ">
+      <div className="w-full mb-20">
+        <HeroCarousel />
+      </div>
       <div className="w-[80rem] [&>*:last-child]:mb-20 m-auto py-6 flex flex-col items-center gap-20">
-        <div className="w-full"> 
-          <HeroSection />
-        </div>
         <div className="w-full flex flex-col items-center">
           <h3 className=" text-4xl font-semibold mb-20 text-cblue">
             {aboutUsSection.title}
@@ -56,14 +58,15 @@ export default function Home() {
                     className={`w-64 ${
                       index == 1 && " relative top-20 w-72 h-80"
                     } overflow-hidden relative rounded-2xl h-72`}
-                  ><Link href="/predications">
+                  >
+                    <Link href="/predications">
                       <Image
-                      fill
-                      style={{ objectFit: "cover" }}
-                      alt="serviteur"
-                      src={item.img}
-                    />
-                  </Link>
+                        fill
+                        style={{ objectFit: "cover" }}
+                        alt="serviteur"
+                        src={item.img}
+                      />
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -178,17 +181,10 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col items-center">
           <h3 className=" text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
-            {churchAdhesionAdvantages.title}
+            {nos_seviteurs.title}
           </h3>
-          <div className="w-full flex items-center justify-center gap-8">
-            {nos_seviteurs.items.map((item) => (
-              <ServantCard
-                key={item.name}
-                name={item.name}
-                description={item.description}
-                img={item.img}
-              />
-            ))}
+          <div className="w-full flex items-center px-1 justify-center gap-8">
+            <NosServiteursCarousel/>
           </div>
         </div>
       </div>
