@@ -3,10 +3,13 @@ import HeroCarousel from "@/components/carousels/HeroCarousel";
 import NosPredicationCarousel from "@/components/carousels/NosPredication";
 import NosServiteursCarousel from "@/components/carousels/ServiteurCarousel";
 import ChurchAdhesionCard from "@/components/homepage/adherer_nos_eglises/card";
+import HeroSection from "@/components/homepage/heroSection";
+import ServantCard from "@/components/homepage/nos_serviteurs/card";
 import AboutUsCard from "@/components/homepage/qui_sommes_nous/card";
 import { Button } from "@/components/ui/button";
 import { homePageContent } from "@/data/homePage";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const {
@@ -48,9 +51,7 @@ export default function Home() {
               <p className=" text-center w-10/12">
                 {predicationsSection.description}
               </p>
-              {/* Margin bottom is added here after considering margins in the gallery */}
                 <NosPredicationCarousel/>
-              </div>
             </div>
             <div className="w-full flex flex-col gap-3 items-center">
               <h3 className=" font-semibold text-xl uppercase">
@@ -168,6 +169,7 @@ export default function Home() {
             <NosServiteursCarousel/>
           </div>
         </div>
+      </div>
     </main>
   );
 }
