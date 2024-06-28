@@ -28,14 +28,14 @@ const NosPredicationCarousel: React.FC = () => {
           {homePageContent.predicationsSection.imageGallery.map(
             (item, index) => (
               <div
-                className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/3 "
+                className=" shrink-0 min-w-0 grow-0  flex items-center justify-center pl-2 basis-1/3 "
                 key={index}
               >
                 <div
 
-                  className={` w-full ${
-                    index % 2 && " relative top-20 w-72 h-80"
-                  } overflow-hidden relative rounded-2xl h-72`}
+                  className={` w-[20rem] border ${
+                    index % 2 && " relative top-20 w-72"
+                  } overflow-hidden relative rounded-2xl h-96`}
                 >
                   {/* <Link href="/predications"> */}
                     <Image
@@ -52,12 +52,12 @@ const NosPredicationCarousel: React.FC = () => {
           )}
         </div>
         <PrevButton
-          className=" absolute top-1/2 left-2 text-blue-600"
+          className=" absolute top-1/2 left-6 text-blue-600"
           onClick={onPrevButtonClick}
           disabled={prevBtnDisabled}
         />
         <NextButton
-          className=" absolute top-1/2 right-2 text-blue-600"
+          className=" absolute top-1/2 right-6 text-blue-600"
           onClick={onNextButtonClick}
           disabled={nextBtnDisabled}
         />

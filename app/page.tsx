@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col w-full min-h-screen ">
-      <div className="w-full mb-20">
+      <div className="w-full border mb-20">
         <HeroCarousel />
       </div>
       <div className="w-[80rem] [&>*:last-child]:mb-20 m-auto py-6 flex flex-col items-center gap-20">
@@ -51,7 +51,9 @@ export default function Home() {
               <p className=" text-center w-10/12">
                 {predicationsSection.description}
               </p>
+              <div className="w-10/12">
                 <NosPredicationCarousel/>
+              </div>
             </div>
             <div className="w-full flex flex-col gap-3 items-center">
               <h3 className=" font-semibold text-xl uppercase">

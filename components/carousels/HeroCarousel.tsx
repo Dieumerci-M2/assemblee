@@ -30,18 +30,18 @@ const HeroCarousel: React.FC = () => {
       <div className=" overflow-hidden w-full relative" ref={emblaRef}>
         <div className="flex">
           {slides.map((index) => (
-            <div className=" shrink-0 min-w-0 grow-0 pl-2" key={index}>
+            <div className=" shrink-0 min-w-0 w-full grow-0" key={index}>
               <HeroSection />
             </div>
           ))}
         </div>
         <PrevButton
-          className=" absolute top-1/2 left-1 text-primary"
+          className=" absolute top-1/2 left-3 text-primary"
           onClick={onPrevButtonClick}
           disabled={prevBtnDisabled}
         />
         <NextButton
-          className=" absolute top-1/2 right-1 text-primary"
+          className=" absolute top-1/2 right-3 text-primary"
           onClick={onNextButtonClick}
           disabled={nextBtnDisabled}
         />

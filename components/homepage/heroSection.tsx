@@ -16,7 +16,7 @@ const diploma = Diplomata_SC({
 function HeroSection() {
   return (
     <div className="w-full h-auto">
-      <div className=" w-[80rem] m-auto relative h-[40rem]">
+      <div className=" w-full m-auto relative h-[40rem]">
         <Image
           alt="heroIMage"
           className=" absolute"
