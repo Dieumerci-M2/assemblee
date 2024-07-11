@@ -28,7 +28,7 @@ export const aboutPageContents = {
             {
                 title : "Pétite histoire",
                 description : `Cette Association sans but lucatif composée des hommes et des femmes qui croient en Jesus-Christ a vu le jour vers les années 1988 à Goma dans la province du Nord-Kivu en RDC
-                Celle-ci prit naissance à travers maintes étapes. La grande part revienne à l’homme de Dieu et homme d’affaire Apôtre MUSTAPHA SHABANI qui fut l’un des membres co-fondateurs du Centre charismatique d’intercession (Cité-Béthel).`,
+                Celle-ci prit naissance à travers maintes étapes. La grande part revienne à l’homme de Dieu et homme d’affaire Apôtre MUSTAPHA SHABANI qui fut l’un des membres co-fondateurs du Centre charismatique d’intercession (Cité-Béthel). Un jour dans le cadre d'allaire, Il se retrouva à Goma étant serviteur de Dieu, il commença à se réunir dans le cadre de la prière avec d'autres frères et sœurs venus d'ailleurs dans la paillote de Maman Anton la femme du Directeur de T'UZB (Union Zaïroise des Banques) où il y avait un responsable de ce groupe de prière répondant au nom de Frère Antoine qui restait chez son grand frère MWANZANZU.`,
                 image : serviteur,
                 buttonText: "Lire plus",
             },
@@ -47,33 +47,7 @@ export const aboutPageContents = {
             },
             {
                 title : "La table du seigneur",
-                description : `C’est un répas mystère que l’église  doit prendre pendant les rassemblements du soir ou de la nuit pour se souvenir de la mort de Jesus-Christ`,
-                image : bread,
-                buttonText: "Lire plus",
-            },
-            {
-                title : "Pétite histoire",
-                description : `Cette Association sans but lucatif composée des hommes et des femmes qui croient en Jesus-Christ a vu le jour vers les années 1988 à Goma dans la prvince du Nord-Kivu en RDC. 
-                Celle-ci prit naissance à travers maintes étapes. La grande part revient à l’homme de Dieu et homme d’affaire à l’apoque MUSTAPHA SHABANI qui fut l’un des membres co-fondateurs du (Centre charismatique d’intercession Cité-Béthel).`,
-                image : serviteur,
-                buttonText: "Lire plus",
-            },
-            {
-                title : "Notre doctrine",
-                description : `L’assemblée Béthel tire source de ses enseignements en général dans la bible de 66 livres et en particulier dans l’épitre aux Ephésiens 2:20-22 source aunthentique designent comment l’église doit être fondée sur les enseignements des Apotres et des prophètes, Jesus étant la prière angulaire. 
-                Certes, l’Assemblée Bethel cherche tout tempas à rependre la parole de Jesus selon laquelle ses disciples accomplirons les mêmes choses que même plus grand (Jean14: 12).`,
-                image : bible,
-                buttonText: "Lire plus",
-            },
-            {
-                title : "Nos baptêmes",
-                description : `L’assemblée Béthel croit au baptème d’eau par immersion dans les eaux qui coulent. L’administration du baptème se fait au nom de Jesus-Christ`,
-                image : bapteme,
-                buttonText: "Lire plus",
-            },
-            {
-                title : "La table du seigneur",
-                description : `C’est un répas mystère que l’église  doit prendre pendant les rassemblements du soir ou de la nuit pour se souvenir de la mort de Jesus-Christ`,
+                description : `C'est un repas mystère que l'église doit prendre pendant les rassemblements du soir ou de la nuit pour se souvenir de la mort du Seigneur Jésus-Christ et de sa victoire sur la mort et sur le diable. Les emblèmes de ce repas sont le pain sans levain préparé par un ministre de Dieu consacré et du vin des raisins. C'est le ministre de Dieu consacré qui peut préparer et servir le repas du Seigneur.`,
                 image : bread,
                 buttonText: "Lire plus",
             },

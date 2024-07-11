@@ -30,7 +30,7 @@ const a_propos = () => {
             {assosiationSection.title}
           </h3>
           <div className='flex gap-10 w-full'>
-            <div className='flex flex-col items-start gap-6 py-10 w-[50%]'>
+            <div className='flex flex-col items-start gap-6 w-[50%]'>
               <h3 className='font-semibold text-2xl'>{assosiationSection.table[0].title}</h3>
               <span>{assosiationSection.table[0].description}</span>
               <Button variant="secondary" className="px-10">{assosiationSection.table[0].buttonText}</Button>
@@ -83,7 +83,7 @@ const a_propos = () => {
                 src={assosiationSection.table[3].image} 
               />
             </div>
-            <div className='flex items-start flex-col gap-6 py-10 w-[50%] h-300'>
+            <div className='flex items-start flex-col gap-10 py-10 w-[50%] h-300'>
               <h3 className='font-semibold text-2xl'>{assosiationSection.table[3].title}</h3>
               <span>{assosiationSection.table[3].description}</span>
               <Button variant="secondary" className="px-10">{assosiationSection.table[3].buttonText}</Button>

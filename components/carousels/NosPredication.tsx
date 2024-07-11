@@ -37,14 +37,14 @@ const NosPredicationCarousel: React.FC = () => {
                     index % 2 && " relative top-20 w-72"
                   } overflow-hidden relative rounded-2xl h-96`}
                 >
-                  {/* <Link href="/predications"> */}
+                  <Link href="/predications"> 
                     <Image
                       fill
                       style={{ objectFit: "cover" }}
                       alt="serviteur"
                       src={item.img}
                     />
-                  {/* </Link> */}
+                  </Link> 
                   
                 </div>
                </div>

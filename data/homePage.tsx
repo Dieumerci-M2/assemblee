@@ -8,6 +8,9 @@ import {
   predicateur1,
   predicateur2,
   predicateur3,
+  predicateur4,
+  predicateur5,
+  predicateur6
 } from "@/public/assets/images/homepage/predication";
 import {
   ecodim,
@@ -25,7 +28,9 @@ import {
   serviteur2,
   serviteur3,
   serviteur4,
+  serviteur5
 } from "@/public/assets/images/homepage/serviteurs";
+import { predication0 } from "@/public/assets/images/predications"
 
 export const homePageContent = {
   heroSection: {
@@ -65,11 +70,11 @@ export const homePageContent = {
       "Dieu parle tentôt d'une manière tentôt d'une autre. Inspirez-vous de ces prédications pour accroître spirituellement jusqu'à ce que vous arriviez à une stature parfaite de Jesus-Christ.",
     imageGallery: [
       { img: predicateur1 },
-      { img: predicateur2 },
-      { img: predicateur3 },
-      { img: predicateur1 },
-      { img: predicateur2 },
-      { img: predicateur3 },
+      // { img: predicateur2 },
+      // { img: predicateur4 },
+      // { img: predication0 },
+      // { img: predicateur3 },
+      // { img: predicateur5 },
     ],
 
     bottomSection: {
@@ -163,26 +168,26 @@ export const homePageContent = {
         description: "Pasteur et Berger de l'assemblée Béthel Lubumbashi",
       },
       {
-        name: "EV. EMMANUEL KARUVATI",
-        img: serviteur1,
+        name: "Pred. PAPA RIGOBERT",
+        img: predicateur5,
         description:
-          "Berger de l'assemblée Béthel Kyeshero et reponsable de l'association assemblée Béthel.",
+          "Serviteur de l'assemblée Béthel Kyeshero.",
       },
       {
-        name: "DR. BERYY L.",
-        img: serviteur2,
+        name: "Pred. UZIMA KANDA",
+        img: predicateur1,
         description:
-          "Docteur de la Parole au sein de l'église assemblée Béthel Kyeshero",
+          "Serviteur de l'assemblée Béthel Kyeshero.",
       },
       {
-        name: "PASTEUR SINZAHERA",
-        img: serviteur3,
-        description: "Pasteur et Berger de l'Assemblée Béthel Office",
+        name: "Pred. Mardochée",
+        img: predicateur3,
+        description: "Serviteur de l'assemblée Béthel Office.",
       },
       {
-        name: "Pasteur THOMAS KAPITO",
-        img: serviteur4,
-        description: "Pasteur et Berger de l'assemblée Béthel Lubumbashi",
+        name: "Pred. ANANI KULIMUSHI",
+        img: serviteur5,
+        description: "Serviteur de l'assemblée Béthel Kyeshero.",
       },
     ],
   },
