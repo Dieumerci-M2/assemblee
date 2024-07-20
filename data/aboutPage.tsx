@@ -65,6 +65,16 @@ export const aboutPageContents = {
                 title : "Couche de mamans",
                 description : "Gorupe de soeurs en Christ composer de mamans de l'église Esemblée Béthel Kyeshero",
                 image : mamans
+            },
+            {
+                title : "Couche de papas",
+                description : "Groupe de frères en Christ composer des papas de l'église Ensemblée Béthel Kyeshero",
+                image : papas
+            },
+            {
+                title : "Couche de mamans",
+                description : "Gorupe de soeurs en Christ composer de mamans de l'église Esemblée Béthel Kyeshero",
+                image : mamans
             }
         ]
     },

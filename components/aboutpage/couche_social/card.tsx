@@ -9,7 +9,7 @@ interface IProps {
 
 const CoucheSocialCard = (props : IProps) => {
   return (
-    <div className='flex w-[50%]'>
+    <div className='flex w-full'>
       <div className='flex flex-col gap-10 py-10 w-[50%] justify-center items-center shadow-md border-t'>
         <h3 className='font-semibold text-1xl'>{props.title}</h3>
         <span className='px-6 text-center'>{props.description}</span>

@@ -19,7 +19,6 @@ function ServantCard(props : IProps) {
           src={props.img}
         />
       </div>
-
       <div className="w-full flex flex-col items-center justify-center gap-6">
         <h3 className=" font-semibold text-lg">{props.name}</h3>
         <p className=" text-center text-sm">{props.description}</p>

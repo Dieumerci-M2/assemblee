@@ -6,7 +6,7 @@ import CoucheSocialCard from '../aboutpage/couche_social/card';
 import { aboutPageContents } from '@/data/aboutPage';
 
 
-const couchesSocialCarousel : React.FC = () => {
+const CouchesSocialCarousel : React.FC = () => {
 
     const [emblaRef, emblaApi] = useEmblaCarousel({
         slidesToScroll: "auto",
@@ -23,10 +23,33 @@ const couchesSocialCarousel : React.FC = () => {
         onNextButtonClick,
       } = usePrevNextButtons(emblaApi);
   return (
-    <section>
-      
+    <section className="w-full flex flex-col items-center gap-2 bg-transparent">
+      <div className=" overflow-hidden w-full relative" ref={emblaRef}>
+        <div className="flex">
+            {aboutPageContents.coucheSocialSection.table.map((item, index)=>(
+                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/2 " key={index}>
+                    <CoucheSocialCard 
+                       key={item.title}
+                       title={item.title}
+                       description={item.description}
+                       image={item.image} 
+                    />
+                </div>
+            ))}
+        </div>
+        <PrevButton
+          className=" absolute top-1/2 left-2 text-blue-600"
+          onClick={onPrevButtonClick}
+          disabled={prevBtnDisabled}
+        />
+        <NextButton
+          className=" absolute top-1/2 right-2 text-blue-600"
+          onClick={onNextButtonClick}
+          disabled={nextBtnDisabled}
+        />
+      </div>
     </section>
   )
 }
 
-export default couchesSocialCarousel
+export default CouchesSocialCarousel

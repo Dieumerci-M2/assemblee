@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import { homePageContent } from '@/data/homePage'
 import { aboutPageContents } from '@/data/aboutPage'
 import NosServiteursCarousel from '@/components/carousels/ServiteurCarousel';
+import CouchesSocialCarousel from '@/components/carousels/couchesSocialCarousel';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -104,14 +105,7 @@ const a_propos = () => {
             {coucheSocialSection.title}
           </h3>
           <div className="w-full flex items-center justify-center gap-8">
-            {coucheSocialSection.table.map((tab) => (
-              <CoucheSocialCard
-                key={tab.title}
-                title={tab.title}
-                description={tab.description}
-                image={tab.image}
-              />
-            ))}
+            <CouchesSocialCarousel />
           </div>
         </section>
         <section className="w-full flex flex-col items-center">
@@ -119,14 +113,7 @@ const a_propos = () => {
             {choraleSection.title}
           </h3>
           <div className='flex gap-6'>
-            {choraleSection.table.map((tab) => (
-              <ChoraleCard
-                key={tab.title}
-                title={tab.title}
-                description={tab.description}
-                image={tab.image}
-              />
-            ))}
+            
           </div>
         </section>
       </article>
