@@ -1,7 +1,8 @@
 
-export const allInfo = [
-    {
-        title: "1. Eglise",
+export const allInfo = {
+    
+        principalTitle : "Association Assemblée Béthel",
+        title: "Eglise",
         description: `Le vocabulaire "EGLISE" est dans l'usage courant, selon l'allemand Ernest TROELTCH, définie comme une institution sacerdotale et hiérarchique de salut, préexistant à ses membres, tirant sa légitimité de sa fondation et de sa succession régulière de ses chefs, mais tendant aussi à valoriser et à régler la conduite de la société globale en avalisant la nature dans sa relativité.
 Elle n'a pas fondement en elle-même, elle n'est pas née de la volonté ou de la décision des êtres humains qui la composent, mais elle est une création de la parole de Dieu, de l'évangile.
 Le nouveau testament présente l'église comme rassemblement renouvelée d'Israël dans sa vision et un accomplissement eschatologique (Tite 2,14).
@@ -9,9 +10,9 @@ Allant concrètement au fond, c'est l'ensemble des gens qui ont répondu aux inv
 La parole de Dieu atteint son but lorsqu'elle éveille l'être humain à la foi et l'intègre à l'église, communion des croyants. Cette communion vécue en Christ instaure une nouvelle qualité de relation entre les êtres humains. Elle signifie compassion mutuelle et participation réciproque aux souffrances et aux joies. Elle exprime dans le partage de ce qu'on possède, l'entraide qui naît de l'appartenance à la communauté (Eglise).
 Zwingli distingue l'église invisible de l'église visible. Le rapport entre ces deux est celui d'un ensemble à l'une des parties. Tous les élus font partie de l'église visible, mais tous les membres de l'église visible ne sont pas élus, ces derniers sont membres de l'église invisible.
 La raison pour cette distinction est la compréhension zwinglienne de l’élection : nous ne savons pas en ce monde qui est le vrai élu de Dieu. Une identification de deux questions a conduit à comprendre l'église invisible.`
-    },
-    {
-        title1: "2. Aperçu général sur l'Association Assemblée Bethel",
+    ,
+    
+        title1: "Aperçu général sur l'Association Assemblée Bethel",
         description1: "Dans ce chapitre, il s'agit de brosser une vue d'ensemble de l'Association Assemblée Béthel, ses églises locales implantées pour déboucher sur le point qui traite de son impact dans leur milieu respectif.",
         subtitle1: "Section I. Ses origines : brève histoire",
         subdescription1: `Cette association sans but lucratif composée des hommes et des femmes qui croient en Jésus Christ a vu le jour vers les années 1988 à Goma dans la Province du Nord-Kivu en RDC.
@@ -26,8 +27,8 @@ Par la grâce de Dieu, le Docteur MUSTAFA fait son retour à Goma avec deux autr
 A partir de là, l'église prendra alors son élan et augmentant en nombre et quelques temps après le docteur MUSTAFA rejoint encore une fois Kinshasa.
 Plus tard, on reçut le pasteur MATUTU LEFU ; Frère Ilunga MUTOMBO SAMSON aujourd'hui apôtre, pasteur, THOMAS KAPITAO... qui acceptèrent de prêter main d'association, avec eux l'église continua à s'organiser sur le plan spirituel et administratif.
 Actuellement par la grâce de Dieu, l'Association Assemblée Béthel compte à son sein plusieurs serviteurs de Dieu œuvrant dans différentes églises locales notamment : Assemblée Béthel Goma/Office, Goma/Kyeshero, Lubumbashi, Beni, Bunia, Rusthuru, Masisi et Walikale.`,
-        subtitle2: "Section II : Dénomination, siège et buts",
-        pontA: `A. Dénomination`,
+        subtitle2: "Dénomination, siège et buts",
+        pointA: `A. Dénomination`,
         descriptionA: ` Elle a été créée en juin 1988 à Goma, conformément à la législation congolaise en vigueur, C'est une Association Sans But Lucratif(ASBL) composée des hommes et des femmes qui croient en Jésus-Christ.`,
         pointB: `B. Siège`,
         descriptionB: `Le siège de l'Association est établi à Goma sur l'avenue Tshela n°001 Quartier MURARA, commune de Karisimbi, ville de Goma province du Nord-Kivu en République Démocratique du Congo. Il abrite les réunions des ministres, de la trésorerie générale et du développement communautaire.`,
@@ -40,17 +41,17 @@ Actuellement par la grâce de Dieu, l'Association Assemblée Béthel compte à s
 `,
         subpoint2: `ii. Sociaux`,
         subdescriptionC2: `Créer des œuvres sociales : écoles, dispensaires, orphelinats, encadrement des veuves, vieillards et des enfants de la rue, élevages, piscicultures, etc.`,
-        pontD: "D. Vision",
+        pointD: "D. Vision",
         descriptionD: `La vision de l'Association Assemblée Béthel est d'être la lumière des nations selon Actes 13 :17. Cette vision se matérialise par :
 * L’enseignement des apôtres et des prophètes de Jésus Christ,
 * L'utilisation des Médias etc.`,
-    },
-    {
-        title2: "SECTION III : Durée et rayon d’action",
+    
+    
+        title2: "Durée et rayon d’action",
         description2: "Elle a été créée pour une durée indéterminée et ayant une vocation universelle, elle exerce ses activités sur toute l’étendue de la RDC et au-delà de ses frontières."
-    },
-    {
-        title3: "SECTION IV : Organigramme et Organisation administrative",
+    ,
+    
+        title3: "Organigramme et Organisation administrative",
         description3: `L’association Assemblée Béthel comprend : 
 * L’Assemblée Générale ;
 * La Représentation Légale ;
@@ -103,16 +104,16 @@ Actuellement par la grâce de Dieu, l'Association Assemblée Béthel compte à s
 • La prévision budgétaire de l'Assemblée Béthel
 • Comptabilisation des toutes les recettes et les dépenses de l'Assemblée Béthel
 • l'Etablissement du bilan annuel de l'Association Assemblée Béthel, auditer tous les biens de l'Association (comptable et extracomptable).`,    
-    },
-    {
-        title4 : "Section V : Fondement des enseignements : la doctrine",
+    
+    
+        title4 : "Fondement des enseignements : la doctrine",
         description4 : `C'est enseignement chrétien, hérétique ou orthodoxe. Les différences surgissent qu'au niveau de l'interprétation. Ainsi en déplaçant le message de son contexte original, on le torture et lui prête l'approximatif ou le contraire de ce qu'il dit.
 L'Assemblée Béthel tire source de ses enseignements en général dans la bible de 66 livres et en particulier dans l'épitre aux Ephésiens chapitre deux verset vingt à vingt-deux source authentique désignant comment l'église doit être fondée sur les enseignements des apôtres et des prophètes Jésus-Christ étant la pierre de l'angle.
 Certes, l'Assemblée Béthel cherche tout temps à rependre la parole de Jésus selon laquelle ses disciples accompliront les mêmes miracles que lui et même plus grands (n14.12).
 Les détracteurs accusaient les ministres de la parole ou les prédicateurs des Branamistes. Mais l'essentiel demeure la saine doctrine. Par délimitation, la saine doctrine est un ensemble des principes, des philosophies et d'enseignements fondamentaux de Jésus-Christ qui concerne le salut parfait, total et éternel de l'homme.`,
-    },
-    {
-        titre5 : "Section VI : Quelques éléments doctrinaux de l'Assemblée Béthel",
+    
+
+        titre5 : "Quelques éléments doctrinaux de l'Assemblée Béthel",
         subtitle5A : "A. Dieu",
         description5A : `L'Assemblée Béthel croit à l'unique Dieu révélé en trois dispensations (Périodes) pour la rédemption de l'humanité. Ce même et unique Dieu révélé comme Père en qualité de 'créateur" révélé comme fils en qualité de "sauveur" et révélé comme Saint-Esprit en sa qualité de Consolateur. L'Assemblée Béthel croit que l'homme est sauvé par la grâce de Dieu au moyen de la foi, laquelle doit être accompagnée par les cures.`,
         subtitle5B : "B. Jésus-Christ",
@@ -165,8 +166,8 @@ Le magistrat est serviteur de Dieu pour ton bien. Mais si tu fais le mal, crains
     description5S : `L'Assemblée Béthel croit au jugement dernier qui consistera à sanctionner et à mettre fin au présent système des choses et au jugement éternel qui consistera à la condamnation éternelle des hommes pécheurs.`,
     subtitle5T : "U. La tenue de culte",
     description5T : `L'assemblée Béthel ne croit pas à une tenue spéciale (Sacerdotale) pour la célébration du culte. Pendant le culte, l'officiant et le prédicateur doivent avoir une tenue décente et ordinaire.`,
-    },
-    {
+    
+    
         title5 : "Organisation de l'église locale dans l'Association Assemblée Béthel",
         subtitle51 : "Section I : Organisation",
         point5A : "A. Son rôle",
@@ -197,5 +198,4 @@ Selon la faute commise, tout fautif peut être sanctionné par sa hiérarchie di
 * Exclusion de l'Association.
 Nb: un procès-verbal devra être rédiger à chaque prise de sanction.
 ` 
-    }
-]
+}

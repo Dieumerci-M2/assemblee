@@ -17,6 +17,6 @@ export const navigations = {
         {
             label : 'prédications',
             path : '/predications'
-        }
+        },
     ]
 } 

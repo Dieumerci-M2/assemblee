@@ -7,6 +7,7 @@ import { homePageContent } from '@/data/homePage'
 import { aboutPageContents } from '@/data/aboutPage'
 import NosServiteursCarousel from '@/components/carousels/ServiteurCarousel';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const a_propos = () => {
   const {
@@ -33,7 +34,7 @@ const a_propos = () => {
             <div className='flex flex-col items-start gap-6 w-[50%]'>
               <h3 className='font-semibold text-2xl'>{assosiationSection.table[0].title}</h3>
               <span>{assosiationSection.table[0].description}</span>
-              <Button variant="secondary" className="px-10">{assosiationSection.table[0].buttonText}</Button>
+             <Link href="/a_propos/association"><Button variant="secondary" className="px-10">{assosiationSection.table[0].buttonText}</Button></Link>
             </div>
             <div className='w-[50%] h-[25rem] relative'>
               <Image
