@@ -7,6 +7,7 @@ import { homePageContent } from '@/data/homePage'
 import { aboutPageContents } from '@/data/aboutPage'
 import NosServiteursCarousel from '@/components/carousels/ServiteurCarousel';
 import CouchesSocialCarousel from '@/components/carousels/couchesSocialCarousel';
+import ChoraleCarousel from '@/components/carousels/choraleCarousel';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -113,7 +114,7 @@ const a_propos = () => {
             {choraleSection.title}
           </h3>
           <div className='flex gap-6'>
-            
+            <ChoraleCarousel />
           </div>
         </section>
       </article>
