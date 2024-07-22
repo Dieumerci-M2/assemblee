@@ -51,6 +51,7 @@ export const programmesPageContents = {
                 timeZoneResponse : "GMT+2",
                 iconAdress : <PlaceIcon size={1.2} />,
                 adresseChurch : "Q.kyeshero Av.Rumimbi Gomma Nord-Kivu",
+                nameChurch : "Béthel Kyeshero"
             },
             {
                 title : "Chaque Mercredi",
@@ -61,6 +62,7 @@ export const programmesPageContents = {
                 timeZoneResponse : "GMT+2",
                 iconAdress : <PlaceIcon size={1.2} />,
                 adresseChurch : "Q.kyeshero Av.Rumimbi Gomma Nord-Kivu",
+                nameChurch : "Béthel Kyeshero"
             },
             {
                 title : "Chaque Vendredi",
@@ -71,6 +73,7 @@ export const programmesPageContents = {
                 timeZoneResponse : "GMT+2",
                 iconAdress : <PlaceIcon size={1.2} />,
                 adresseChurch : "Q.kyeshero Av.Rumimbi Gomma Nord-Kivu",
+                nameChurch : "Béthel Kyeshero"
             },
             {
                 title : "Chaque Dimanche",
@@ -81,6 +84,7 @@ export const programmesPageContents = {
                 timeZoneResponse : "GMT+2",
                 iconAdress : <PlaceIcon size={1.2} />,
                 adresseChurch : "Q.kyeshero Av.Rumimbi Gomma Nord-Kivu",
+                nameChurch : "Béthel Kyeshero"
             }
         ]
     },
