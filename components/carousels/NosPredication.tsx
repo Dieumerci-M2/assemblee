@@ -31,22 +31,21 @@ const NosPredicationCarousel: React.FC = () => {
                 className=" shrink-0 min-w-0 grow-0  flex items-center justify-center pl-2 basis-1/3 "
                 key={index}
               >
-                <div
-
+                <a
+href="/predications"
                   className={` w-[20rem] border ${
                     index % 2 && " relative top-20 w-72"
                   } overflow-hidden relative rounded-2xl h-96`}
                 >
-                  <Link href="/predications"> 
                     <Image
                       fill
+                      className="w-full h-full"
                       style={{ objectFit: "cover" }}
                       alt="serviteur"
                       src={item.img}
                     />
-                  </Link> 
                   
-                </div>
+                </a>
                </div>
             )
           )}

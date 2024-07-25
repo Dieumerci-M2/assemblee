@@ -34,7 +34,7 @@ import { predication0 } from "@/public/assets/images/predications"
 
 export const homePageContent = {
   heroSection: {
-    coverImage: heroImageOffice,
+    images: [heroImageOffice, heroImageKyeshero, heroImageLub],
     text: "association assemblée bethél",
     buttonText: "En savoir plus sur nous",
   },
@@ -70,11 +70,11 @@ export const homePageContent = {
       "Dieu parle tentôt d'une manière tentôt d'une autre. Inspirez-vous de ces prédications pour accroître spirituellement jusqu'à ce que vous arriviez à une stature parfaite de Jesus-Christ.",
     imageGallery: [
       { img: predicateur1 },
-      // { img: predicateur2 },
-      // { img: predicateur4 },
-      // { img: predication0 },
-      // { img: predicateur3 },
-      // { img: predicateur5 },
+      { img: predicateur2 },
+      { img: predicateur4 },
+      { img: predication0 },
+      { img: predicateur3 },
+      { img: predicateur5 },
     ],
 
     bottomSection: {

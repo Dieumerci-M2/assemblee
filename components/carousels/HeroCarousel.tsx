@@ -1,6 +1,6 @@
 "use client";
-
 import React from "react";
+import { homePageContent } from "@/data/homePage";
 import { DotButton, useDotButton } from "./dotButtons";
 import { PrevButton, NextButton, usePrevNextButtons } from "./arrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
@@ -23,15 +23,14 @@ const HeroCarousel: React.FC = () => {
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
 
-  const slides = Array.from(Array(3).keys());
 
   return (
     <section className="w-full flex flex-col items-center gap-2 bg-transparent">
       <div className=" overflow-hidden w-full relative" ref={emblaRef}>
         <div className="flex">
-          {slides.map((index) => (
+          {homePageContent.heroSection.images.map((img, index) => (
             <div className=" shrink-0 min-w-0 w-full grow-0" key={index}>
-              <HeroSection />
+              <HeroSection imgUrl={img}/>
             </div>
           ))}
         </div>
