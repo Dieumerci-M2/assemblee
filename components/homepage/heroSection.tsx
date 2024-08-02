@@ -25,7 +25,7 @@ function HeroSection({imgUrl} : {imgUrl : StaticImageData}) {
           src={imgUrl}
         />
         <div className=" absolute w-full h-full flex items-center justify-center gap-8 flex-col">
-          <h3 className={  ` ${diploma.className} text-white text-3xl font-bold uppercase`}>{homePageContent.heroSection.text}</h3>
+          <h3 className={  ` ${diploma.className} m-2 lg:m-0 text-white text-center text-lg lg:text-3xl font-bold uppercase`}>{homePageContent.heroSection.text}</h3>
           <Button size="lg" className=""><Link href="/a_propos">{homePageContent.heroSection.buttonText}</Link></Button>
         </div>
       </div>

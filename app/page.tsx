@@ -22,15 +22,15 @@ export default function Home() {
 
   return (
     <main className="flex flex-col w-full min-h-screen ">
-      <div className="w-full border mb-20">
+      <div className="w-full border mb-10 lg:mb-20">
         <HeroCarousel />
       </div>
-      <div className="w-[80rem] [&>*:last-child]:mb-20 m-auto py-6 flex flex-col items-center gap-20">
+      <div className="w-full md:w-[80rem] [&>*:last-child]:mb-10 lg:[&>*:last-child]:mb-20 m-auto py-3 lg:py-6 flex flex-col items-center gap-6 lg:gap-20">
         <div className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl font-semibold mb-20 text-cblue">
+          <h3 className=" text-xl lg:text-4xl font-semibold mb-10 lg:mb-20 text-cblue">
             {aboutUsSection.title}
           </h3>
-          <div className="w-full items-center justify-center flex gap-14">
+          <div className="w-full flex items-center justify-center gap-2 lg:gap-14">
             {aboutUsSection.cards.map((card) => (
               <AboutUsCard
                 key={card.title}
@@ -43,15 +43,15 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full  flex flex-col items-center">
-          <h3 className=" text-4xl font-semibold mb-20 text-cblue">
+          <h3 className="text-xl lg:text-4xl font-semibold my-8 md:mb-20 text-cblue">
             {predicationsSection.title}
           </h3>
           <div className="w-full flex flex-col items-center">
-            <div className="flex flex-col items-center justify-between w-full gap-6">
-              <p className=" text-center w-10/12">
+            <div className="flex flex-col items-center justify-center md:justify-between w-full gap-6 md:gap-10">
+              <p className="text-[10px] md:text-lg text-center w-10/12">
                 {predicationsSection.description}
               </p>
-              <div className="w-10/12">
+              <div className="w-9/12 md:w-10/12">
                 <NosPredicationCarousel/>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
+          <h3 className="text-xl lg:text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
             {churchAdhesionAdvantages.title}
           </h3>
           <div className="w-full mb-16 items-center justify-center flex">
@@ -82,8 +82,8 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
-            {churchAdhesionAdvantages.title}
+          <h3 className="text-xl lg:text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
+            {rejoignez_nous.title}
           </h3>
           <div className="w-full flex flex-col gap-12">
             <div className="w-full h-[30rem] items-center justify-between flex">
@@ -92,7 +92,6 @@ export default function Home() {
                   <p className=" text-cred text-lg">
                     {rejoignez_nous.events.upcomingEvent.headerText}
                   </p>
-
                   <p className=" text-xl">
                     {rejoignez_nous.events.upcomingEvent.date}
                   </p>
@@ -136,6 +135,11 @@ export default function Home() {
                 />
               </div>
             </div>
+            <div className="flex flex-col items-center">
+              <h3 className="text-xl lg:text-4xl text-center font-semibold mb-10 max-w-[50%] text-cblue">
+                {rejoignez_nous.year_of_attachement.title}
+              </h3>
+            </div>
             <div className="w-full h-[35rem] relative flex items-center justify-center">
               <Image
                 fill
@@ -165,7 +169,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
+          <h3 className="text-xl lg:text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
             {nos_seviteurs.title}
           </h3>
           <div className="w-full flex items-center px-1 justify-center gap-8">

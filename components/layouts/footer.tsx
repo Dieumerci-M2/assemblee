@@ -11,13 +11,13 @@ import { Input } from "../ui/input";
 function Footer() {
   return (
     <div id="footer" className="w-full bg-black text-white h-auto">
-      <div className=" w-[80rem] justify-between h-72 m-auto p-6 flex ">
+      <div className=" w-[80rem] flex justify-between h-72 m-auto p-6">
         <div className="  flex flex-col h-full p-2 gap-5 ">
-          <div>
+          <div className="flex">
             <FooterLogo />
           </div>
 
-          <ul className="w-full text-ccream/60 text-sm flex-col flex gap-1">
+          <ul className="w-full text-cream/60 text-sm flex-col flex gap-1">
             <li>{contacts.phoneNumber}</li>
             <li>{contacts.adress}</li>
             <li>{contacts.email}</li>

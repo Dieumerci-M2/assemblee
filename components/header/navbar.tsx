@@ -8,7 +8,7 @@ function NavBar() {
   const [active, setActive] = useState(navigations.defaultActive);
 
   return (
-    <ul className="flex h-12 px-3 items-center  justify-center gap-4">
+    <ul className="flex h-8 lg:h-12 px-1 lg:px-3 items-center  justify-center gap-1 lg:gap-4">
       {navigations.items.map((nav) => (
         <li
           onClick={() => setActive(nav.label)}
@@ -16,7 +16,7 @@ function NavBar() {
           key={nav.path}
         >
           <Link href={nav.path}>
-            <span className=" capitalize">{nav.label}</span>
+            <span className=" text-[6px] md:text-xl">{nav.label}</span>
           </Link>
         </li>
       ))}
