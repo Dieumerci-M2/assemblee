@@ -4,10 +4,11 @@ import Image from "next/image";
 
 function Logo() {
   return (
-    <div className="  flex items-center justify-center h-14 w-28 relative">
+    <div className="flex relative items-center justify-center h-8 lg:h-14 w-14 lg:w-28">
       <Image fill style={{ objectFit: "contain" }} alt="logo" src={logo} />
     </div>
   );
 }
 
 export default Logo;
+ 

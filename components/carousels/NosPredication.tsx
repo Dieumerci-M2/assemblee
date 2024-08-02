@@ -28,11 +28,10 @@ const NosPredicationCarousel: React.FC = () => {
           {homePageContent.predicationsSection.imageGallery.map(
             (item, index) => (
               <div
-                className=" shrink-0 min-w-0 grow-0  flex items-center justify-center pl-2 basis-1/3 "
+                className=" shrink-0 min-w-0 grow-0  flex items-center justify-center pl-2 basis-1/1 md:basis-1/3 "
                 key={index}
               >
-                <a
-href="/predications"
+                <a href="/predications"
                   className={` w-[20rem] border ${
                     index % 2 && " relative top-20 w-72"
                   } overflow-hidden relative rounded-2xl h-96`}
@@ -44,7 +43,6 @@ href="/predications"
                       alt="serviteur"
                       src={item.img}
                     />
-                  
                 </a>
                </div>
             )
