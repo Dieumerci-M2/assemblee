@@ -12,19 +12,19 @@ function Footer() {
   return (
     <div id="footer" className="w-full bg-black text-white h-auto">
       <div className=" w-[80rem] flex justify-between h-72 m-auto p-6">
-        <div className="  flex flex-col h-full p-2 gap-5 ">
-          <div className="flex">
+        <div className="  flex flex-col h-full p-6 md:p-2 gap-5 ">
+          <div className="flex justify-center md:justify-start">
             <FooterLogo />
           </div>
 
-          <ul className="w-full text-cream/60 text-sm flex-col flex gap-1">
+          <ul className="w-full text-cream/60 text-[10px] md:text-sm text-center md:text-left flex-col flex gap-1">
             <li>{contacts.phoneNumber}</li>
             <li>{contacts.adress}</li>
             <li>{contacts.email}</li>
           </ul>
         </div>
 
-        <div className="p-2 flex flex-col gap-5">
+        <div className="p-2 hidden md:flex flex-col gap-5">
           <h3 className=" font-medium">{quickLinks.title}</h3>
           <ul className="w-full text-sm text-ccream/60 flex-col flex gap-1">
             {quickLinks.items.map((item) => (
@@ -37,7 +37,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="p-2 flex flex-col gap-5">
+        <div className="p-2 hidden md:flex flex-col gap-5">
           <h3>{socialMedias.title}</h3>
           <ul className="w-full text-sm text-primary flex-col flex gap-1">
             {socialMedias.items.map((item) => (
@@ -48,7 +48,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="p-2 flex flex-col gap-5">
+        <div className="p-2 hidden md:flex flex-col gap-5">
           <h2>{subscriptionFooterZone.title}</h2>
           <form>
             <div className="flex w-full max-w-sm items-center space-x-2">

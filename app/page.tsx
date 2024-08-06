@@ -133,7 +133,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mb-[-60px] md:mb-0 mt-[-20px] md:mt-0">
               <h3 className="text-lg lg:text-4xl text-center font-semibold mb-10 max-w-[80%] md:max-w-[50%] text-cblue">
                 {rejoignez_nous.year_of_attachement.title}
               </h3>
@@ -141,23 +141,24 @@ export default function Home() {
             <div className="w-full h-[35rem] relative flex items-center justify-center">
               <Image
                 fill
-                style={{ objectFit: "fill" }}
+                style={{ objectFit: "cover" }}
                 alt="bgimage "
                 src={rejoignez_nous.year_of_attachement.bgImg}
+                className="rounded-2xl md:rounded-lg"
               />
-              <div className=" rounded-lg overflow-hidden w-[32rem] h-[22rem] p-10 flex z-30 bg-white relative after:absolute after:w-4/5 after:h-[0.8rem] after:rounded-tl-lg after:bg-cred after:bottom-0 after:right-0">
+              <div className=" rounded-lg overflow-hidden w-[22rem] md:w-[32rem] h-[22rem] p-10 flex z-30 bg-white relative after:absolute after:w-4/5 after:h-[0.8rem] after:rounded-tl-lg after:bg-cred after:bottom-0 after:right-0">
                 <div className="w-3/5 h-full flex flex-col justify-around shrink-0">
-                  <h3 className=" text-xl font-bold uppercase">
+                  <h3 className=" text-sm md:text-xl font-bold uppercase">
                     {rejoignez_nous.year_of_attachement.title}
                   </h3>
-                  <p>{rejoignez_nous.year_of_attachement.description}</p>
+                  <p className="text-sm md:text-lg">{rejoignez_nous.year_of_attachement.description}</p>
                   <Link href="/a_propos/association">
-                    <Button className="w-full">
+                    <Button className="w-full text-[10px] md:text-lg h-8 md:h-12">
                       {rejoignez_nous.year_of_attachement.buttonText}
                     </Button>
                   </Link>
                 </div>
-                <div className=" flex items-center text-cblue justify-center flex-grow">
+                <div className=" flex items-center text-cblue text-[8px] md:text-lg justify-center flex-grow">
                   {rejoignez_nous.year_of_attachement.icon}
                   {rejoignez_nous.year_of_attachement.icon}
                 </div>
@@ -166,10 +167,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex flex-col items-center">
-          <h3 className="text-lg lg:text-4xl text-center font-semibold mb-20 max-w-[50%] text-cblue">
+          <h3 className="text-lg lg:text-4xl text-center font-semibold mb-20 max-w-[80%] md:max-w-[50%] text-cblue">
             {nos_seviteurs.title}
           </h3>
-          <div className="w-full flex items-center px-1 justify-center gap-8">
+          <div className="w-full px-10 md:px-0 flex items-center justify-center gap-1 md:gap-8">
             <NosServiteursCarousel />
           </div>
         </div>
