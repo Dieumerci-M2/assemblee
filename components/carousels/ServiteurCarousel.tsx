@@ -29,7 +29,7 @@ const NosServiteursCarousel: React.FC = () => {
       <div className=" overflow-hidden w-full relative" ref={emblaRef}>
         <div className="flex">
           {homePageContent.nos_seviteurs.items.map((item, index) => (
-            <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/4 " key={index}>
+            <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/1 md:basis-1/4 " key={index}>
               <ServantCard
                 key={item.name}
                 name={item.name}
