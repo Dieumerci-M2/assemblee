@@ -27,7 +27,7 @@ const ProgrammeSemaineCarousel : React.FC = () => {
       <div className=" overflow-hidden w-full relative" ref={emblaRef} >
         <div className="flex">
             {programmesPageContents.programmesSemaineSection.cards.map((item, index)=>(
-                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/4 " key={index}>
+                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/2 md:basis-1/4" key={index}>
                    <CulteSemaine
                       key={index}
                       title={item.title}
