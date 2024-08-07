@@ -15,7 +15,7 @@ function Header() {
           <NavBar />
         </div>
         <div>
-          <Button className=" text-[6px] md:text-lg h-6 lg:h-12 p-2 md:p-6"><a href="#footer">{headerZone.contactButtonText}</a></Button>
+          <Button className=" text-[8px] md:text-lg h-6 lg:h-12 p-2 md:p-6"><a href="#footer">{headerZone.contactButtonText}</a></Button>
         </div>
       </div>
     </div>

@@ -21,11 +21,11 @@ const ChoraleCarousel : React.FC = () => {
         onNextButtonClick,
       } = usePrevNextButtons(emblaApi);
   return (
-    <section className="w-full flex flex-col items-center gap-2 bg-transparent">
+    <section className="w-[90%] flex flex-col items-center gap-2 bg-transparent">
       <div className=" overflow-hidden w-full relative" ref={emblaRef}>
         <div className="flex">
             {aboutPageContents.choraleSection.table.map((item, index)=>(
-                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/4 " key={index}>
+                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/1 md:basis-1/4 " key={index}>
                     <ChoraleCard
                          key={item.title}
                          title={item.title}
