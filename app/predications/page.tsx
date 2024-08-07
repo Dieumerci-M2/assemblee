@@ -9,10 +9,10 @@ const predications = () => {
     toutesLesPrediSection
   }  = predicationPageContent
   return (
-    <main className='px-[10rem] bg-[#f9f7f5]'>
-      <section>
+    <main className='px-0 md:px-[10rem] bg-[#f9f7f5]'>
+      <section className='md:mt-20'>
         <div className='flex justify-center'>
-          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+          <h3 className="text-lg md:text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
             {precationRecenteSection.title}
           </h3>
         </div>
@@ -28,9 +28,9 @@ const predications = () => {
           />
         </div>
       </section>
-      <section className='mb-20'>
+      <section className='mt-10 md:my-20'>
           <div className='flex justify-center'>
-            <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+            <h3 className="text-lg lg:text-4xl text-center font-semibold mb-10 max-w-[80%] md:max-w-[50%] text-cblue">
               {toutesLesPrediSection.title}
             </h3>
           </div>
