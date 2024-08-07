@@ -27,7 +27,7 @@ const CouchesSocialCarousel : React.FC = () => {
       <div className=" overflow-hidden w-full relative" ref={emblaRef}>
         <div className="flex">
             {aboutPageContents.coucheSocialSection.table.map((item, index)=>(
-                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/2 " key={index}>
+                <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/1 md:basis-1/2 " key={index}>
                     <CoucheSocialCard 
                        key={item.title}
                        title={item.title}

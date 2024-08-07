@@ -27,82 +27,98 @@ const a_propos = () => {
           <HeroSection />
         </div>
       </section>
-      <article className='px-[10rem]'>
-        <section className="w-full flex flex-col items-center gap-10">
-          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+      <article className='md:px-[10rem]'>
+        <section className="w-full flex flex-col justify-center items-center gap-0 md:gap-10">
+          <h3 className="text-lg md:text-4xl text-center font-semibold my-4 md:my-20 max-w-[50%] text-cblue">
             {assosiationSection.title}
           </h3>
-          <div className='flex gap-10 w-full'>
-            <div className='flex flex-col items-start gap-6 w-[50%]'>
-              <h3 className='font-semibold text-2xl'>{assosiationSection.table[0].title}</h3>
-              <span>{assosiationSection.table[0].description}</span>
-             <Link href="/a_propos/association"><Button variant="secondary" className="px-10">{assosiationSection.table[0].buttonText}</Button></Link>
+          <div className='flex flex-col md:flex-row gap-10 w-full'>
+            <div className='flex flex-col items-center justify-center md:justify-start md:items-start gap-6 w-[90%] md:w-[50%]'>
+              <h3 className='font-semibold text-lg md:text-2xl'>{assosiationSection.table[0].title}</h3>
+              <span className='text-sm text-center md:text-lg md:text-left'>{assosiationSection.table[0].description}</span>
+              <Link href="/a_propos/association">
+                <Button variant="secondary" className="px-24 md:px-10 text-sm md:text-lg">
+                  {assosiationSection.table[0].buttonText}
+                </Button>
+              </Link>
             </div>
-            <div className='w-[50%] h-[25rem] relative'>
+            <div className='w-full md:w-[50%] h-[25rem] relative'>
               <Image
                 fill
-                style={{objectFit: "cover" }}
+                style={{ objectFit: "cover" }}
                 alt="card"
                 src={assosiationSection.table[0].image}
               />
             </div>
           </div>
-          <div className='flex gap-10'>
-            <div className='w-[50%] h-[25rem] relative'>
+          <div className='flex flex-col-reverse md:flex-row gap-10'>
+            <div className='w-full md:w-[50%] h-[25rem] relative'>
               <Image
-                fill 
-                style={{objectFit : 'fill'}} 
-                alt="card" 
-                src={assosiationSection.table[1].image} 
+                fill
+                style={{ objectFit: 'fill' }}
+                alt="card"
+                src={assosiationSection.table[1].image}
               />
             </div>
-            <div className='flex flex-col items-start gap-6 py-4 w-[50%] h-300'>
-              <h3 className='font-semibold text-2xl'>{assosiationSection.table[1].title}</h3>
-              <span>{assosiationSection.table[1].description}</span>
-              <Button variant="secondary" className="px-10">{assosiationSection.table[1].buttonText}</Button>
+            <div className='flex flex-col items-center justify-center md:justify-start md:items-start gap-6 w-[90%] md:w-[50%] mt-10 md:mt-0'>
+              <h3 className='font-semibold text-lg md:text-2xl'>{assosiationSection.table[1].title}</h3>
+              <span className='text-sm text-center md:text-lg md:text-left'>{assosiationSection.table[1].description}</span>
+              <Link href="/a_propos/association">
+                <Button variant="secondary" className="px-24 md:px-10 text-sm md:text-lg">
+                  {assosiationSection.table[1].buttonText}
+                </Button>
+              </Link>
             </div>
           </div>
-          <div className='flex gap-10'>
-            <div className='flex items-start flex-col py-10 gap-6 w-[50%] h-300'>
-              <h3 className='font-semibold text-2xl'>{assosiationSection.table[2].title}</h3>
-              <span>{assosiationSection.table[2].description}</span>
-              <Button variant="secondary" className="px-10">{assosiationSection.table[2].buttonText}</Button>
+          <div className='flex flex-col md:flex-row gap-10 w-full'>
+            <div className='flex flex-col items-center justify-center md:justify-start md:items-start gap-6 w-[90%] md:w-[50%] mt-10 md:mt-0'>
+              <h3 className='font-semibold text-lg md:text-2xl'>{assosiationSection.table[2].title}</h3>
+              <span className='text-sm text-center md:text-lg md:text-left'>{assosiationSection.table[2].description}</span>
+              <Link href="/a_propos/association">
+                <Button variant="secondary" className="px-24 md:px-10 text-sm md:text-lg">
+                  {assosiationSection.table[2].buttonText}
+                </Button>
+              </Link>
             </div>
-            <div className='w-[50%] h-[25rem] relative'>
+            <div className='w-full md:w-[50%] h-[25rem] relative'>
               <Image
-                fill 
-                style={{objectFit : 'fill'}} 
-                alt="card" 
-                src={assosiationSection.table[2].image} 
+                fill
+                style={{ objectFit: 'fill' }}
+                alt="card"
+                src={assosiationSection.table[2].image}
               />
             </div>
           </div>
-          <div className='flex flex-row gap-10'>
-            <div className='w-[50%] h-[25rem] relative'>
+          <div className='flex flex-col-reverse md:flex-row gap-10'>
+            <div className='w-full md:w-[50%] h-[25rem] relative'>
               <Image
-                fill 
-                style={{objectFit : 'fill'}} 
-                alt="card" 
-                src={assosiationSection.table[3].image} 
+                fill
+                style={{ objectFit: 'fill' }}
+                alt="card"
+                src={assosiationSection.table[3].image}
               />
             </div>
-            <div className='flex items-start flex-col gap-10 py-10 w-[50%] h-300'>
-              <h3 className='font-semibold text-2xl'>{assosiationSection.table[3].title}</h3>
-              <span>{assosiationSection.table[3].description}</span>
-              <Button variant="secondary" className="px-10">{assosiationSection.table[3].buttonText}</Button>
+            <div className='flex flex-col items-center justify-center md:justify-start md:items-start gap-6 w-[90%] md:w-[50%] mt-10 md:mt-0'>
+              <h3 className='font-semibold text-lg md:text-2xl'>{assosiationSection.table[3].title}</h3>
+              <span className='text-sm text-center md:text-lg md:text-left'>{assosiationSection.table[3].description}</span>
+              <Link href="/a_propos/association">
+                <Button variant="secondary" className="px-24 md:px-10 text-sm md:text-lg">
+                  {assosiationSection.table[3].buttonText}
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
         <section className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+          <h3 className="text-lg md:text-4xl text-center font-semibold my-8 md:my-20 max-w-[50%] text-cblue">
             {nos_seviteurs.title}
           </h3>
           <div className="w-full flex items-center justify-center gap-8">
-           <NosServiteursCarousel />
+            <NosServiteursCarousel />
           </div>
-        </section >
+        </section>
         <section className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+          <h3 className="text-lg md:text-4xl text-center font-semibold my-8 md:my-20 max-w-[50%] text-cblue">
             {coucheSocialSection.title}
           </h3>
           <div className="w-full flex items-center justify-center gap-8">
@@ -110,7 +126,7 @@ const a_propos = () => {
           </div>
         </section>
         <section className="w-full flex flex-col items-center">
-          <h3 className=" text-4xl text-center font-semibold my-20 max-w-[50%] text-cblue">
+          <h3 className="text-lg md:text-4xl text-center font-semibold my-8 md:my-20 max-w-[50%] text-cblue">
             {choraleSection.title}
           </h3>
           <div className='flex gap-6'>

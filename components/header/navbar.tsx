@@ -16,7 +16,7 @@ function NavBar() {
           key={nav.path}
         >
           <Link href={nav.path}>
-            <span className=" text-[6px] md:text-xl">{nav.label}</span>
+            <span className=" text-[8px] md:text-xl">{nav.label}</span>
           </Link>
         </li>
       ))}

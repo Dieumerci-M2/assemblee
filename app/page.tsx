@@ -86,8 +86,8 @@ export default function Home() {
             {rejoignez_nous.title}
           </h3>
           <div className="w-full flex flex-col gap-12">
-            <div className="w-full h-[30rem] items-center justify-between flex">
-              <div className=" bg-orange-700/10 flex-col w-[90%] md:w-1/2 h-full p-2 md:p-14 justify-between">
+            <div className="w-full h-[25rem] md:h-[30rem] items-center justify-between flex">
+              <div className=" bg-orange-700/10 flex-col w-full md:w-1/2 h-full p-2 md:p-14 justify-between">
                 <div className="w-full flex justify-between mb-6 pt-8 md:pt-0">
                   <p className=" text-cred text-sm md:text-lg">
                     {rejoignez_nous.events.upcomingEvent.headerText}
@@ -96,14 +96,14 @@ export default function Home() {
                     {rejoignez_nous.events.upcomingEvent.date}
                   </p>
                 </div>
-                <p className="font-semibold text-center md:text-left text-lg md:text-2xl my-6">
+                <p className="font-semibold text-center md:text-left text-lg md:text-2xl my-6 md:my-4">
                   {rejoignez_nous.events.upcomingEvent.title}
                 </p>
-                <div className="w-full md:w-2/3 flex justify-center md:justify-start items-center md:items-start flex-col gap-8 mb-6">
+                <div className="w-full md:w-2/3 flex justify-center md:justify-start items-center md:items-start flex-col gap-8 mb-6 md:mb-4">
                   <p className="text-center text-sm md:text-lg">
                     {rejoignez_nous.events.upcomingEvent.description}
                   </p>
-                  <div className="w-full flex justify-center items-center md:justify-start md:items-start flex-col gap-4 mb-6">
+                  <div className="w-full flex justify-center items-center md:justify-start md:items-start flex-col gap-4 md:gap-2 mb-6 md:mb-4">
                     <div className="flex gap-3 items-end">
                       <span className="flex size-5 md:size-10 items-center justify-center text-cblue">
                         {rejoignez_nous.events.timeIcon}
@@ -138,7 +138,7 @@ export default function Home() {
                 {rejoignez_nous.year_of_attachement.title}
               </h3>
             </div>
-            <div className="w-full h-[35rem] relative flex items-center justify-center">
+            <div className="z-0 w-full h-[35rem] relative flex items-center justify-center">
               <Image
                 fill
                 style={{ objectFit: "cover" }}
