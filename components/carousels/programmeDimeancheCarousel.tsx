@@ -27,7 +27,7 @@ const ProgrammeDimeancheCarousel : React.FC = () => {
         <div className="flex">
             {
                 programmesPageContents.programmeDimancheSection.cards.map((item, index)=>(
-                    <div className=" shrink-0 min-w-0 grow-0 pl-2 basis-1/2 " key={index}>
+                    <div className="shrink-0 min-w-0 grow-0 pl-2 basis-1/1 md:basis-1/2" key={index}>
                        <CulteDimanche
                             key={item.title}
                             title={item.title}
