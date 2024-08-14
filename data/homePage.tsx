@@ -120,12 +120,12 @@ export const homePageContent = {
       placeIcon: <PlaceIcon size={1.5} />,
       upcomingEvent: {
         headerText: "Evénement à venir",
-        title: "Journée spécial d'échange de vœux",
+        title: "Seminaire",
         description:
-          "La jeunesse de l'assemblée Béthel organise une sortie chrétienne pour différentes activités.",
-        time: "Vendredi 23:39 IST",
-        date: "20/07/2024",
-        place: "Chez VUNABANDI",
+          "L'assemblée Béthel Kyeshero Organise un Seminaire avec le Thème : <<Les Sauterelles face aux Abeilles>>",
+        time: "Du Mardi au Vendredi de 15h30-17h30 En fin Le Dimanche de 9h00-12h00",
+        date: "20/08/2024 au 25/08/2024",
+        place: "ASSEMBLEE BETHEL KYESHERO",
         flayer: eventFlayer,
         registerButton: {
           text: "S'inscrire",
