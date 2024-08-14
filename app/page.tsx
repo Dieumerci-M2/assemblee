@@ -87,7 +87,7 @@ export default function Home() {
           </h3>
           <div className="w-full flex flex-col gap-12">
             <div className="w-full h-[25rem] md:h-[30rem] items-center justify-between flex">
-              <div className=" bg-orange-700/10 flex-col w-full md:w-1/2 h-full p-2 md:p-14 justify-between">
+              <div className="hidden md:flex bg-orange-700/10 flex-col w-full md:w-1/2 h-full p-2 md:p-14 justify-between">
                 <div className="w-full flex justify-between mb-6 pt-8 md:pt-0">
                   <p className=" text-cred text-sm md:text-lg">
                     {rejoignez_nous.events.upcomingEvent.headerText}
@@ -118,13 +118,13 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-center md:justify-start items-center md:items-start">
+                {/* <div className="flex justify-center md:justify-start items-center md:items-start">
                   <Button className="text-sm md:text-lg">
                     {rejoignez_nous.events.upcomingEvent.registerButton.text}
                   </Button>
-                </div>
+                </div> */}
               </div>
-              <div className="hidden md:flex relative w-1/2 h-full min-w-80">
+              <div className="flex relative w-full md:w-1/2 h-full min-w-80">
                 <Image
                   fill
                   style={{ objectFit: "fill" }}
