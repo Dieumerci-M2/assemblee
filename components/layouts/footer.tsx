@@ -24,7 +24,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="p-2 hidden md:flex flex-col gap-5">
+        <div className="p-2 hidden lg:flex flex-col gap-5">
           <h3 className=" font-medium">{quickLinks.title}</h3>
           <ul className="w-full text-sm text-ccream/60 flex-col flex gap-1">
             {quickLinks.items.map((item) => (
@@ -37,7 +37,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="p-2 hidden md:flex flex-col gap-5">
+        <div className="p-2 hidden lg:flex flex-col gap-5">
           <h3>{socialMedias.title}</h3>
           <ul className="w-full text-sm text-primary flex-col flex gap-1">
             {socialMedias.items.map((item) => (
@@ -48,7 +48,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="p-2 hidden md:flex flex-col gap-5">
+        <div className="p-2 hidden lg:flex flex-col gap-5">
           <h2>{subscriptionFooterZone.title}</h2>
           <form>
             <div className="flex w-full max-w-sm items-center space-x-2">

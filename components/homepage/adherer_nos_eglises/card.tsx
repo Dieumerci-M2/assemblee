@@ -20,7 +20,7 @@ function ChurchAdhesionCard(props: IProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="w-[18rem] h-[25rem] relative border cursor-pointer">
+        <div className="w-[18rem] md:w-[12rem] h-[25rem] relative border cursor-pointer">
           <Image
             fill
             style={{ objectFit: "cover" }}

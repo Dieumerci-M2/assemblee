@@ -7,7 +7,7 @@ import { headerZone } from "@/data/headerZone";
 function Header() {
   return (
     <div className="w-full shadow h-20 ">
-      <div className="m-1 lg:m-auto w-full h-14 px-1 lg:px-6 flex items-center justify-center lg:justify-between gap-1">
+      <div className="m-1 lg:m-auto w-full h-14 px-1 lg:px-6 flex items-center md:items-start lg:items-center justify-center md:justify-start lg:justify-between gap-1">
         <div className="">
           <Logo />
         </div>
